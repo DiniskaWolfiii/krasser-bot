@@ -17,18 +17,18 @@ module.exports = {
         const coffeeUser = interaction.options.getMember('user');
         if(coffeeUser) {
             let antworten = [
-                `*${interaction.user} gibt ${cofeeUser} einen Latte Macchiato*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Java Chip Frappucino*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Pumpkin Pie Latte*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Espresso*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Vanille Chocolate Latte*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Kaffee*`,
-                `*${interaction.user} gibt ${cofeeUser} einen White Chocolate Macchiato*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Caffè Latte*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Cappuccino*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Caramel Macchiato*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Caffè Mocha*`,
-                `*${interaction.user} gibt ${cofeeUser} einen Caffè Americano*`
+                `*${interaction.user} gibt ${coffeeUser} einen Latte Macchiato*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Java Chip Frappucino*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Pumpkin Pie Latte*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Espresso*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Vanille Chocolate Latte*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Kaffee*`,
+                `*${interaction.user} gibt ${coffeeUser} einen White Chocolate Macchiato*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Caffè Latte*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Cappuccino*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Caramel Macchiato*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Caffè Mocha*`,
+                `*${interaction.user} gibt ${coffeeUser} einen Caffè Americano*`
             ]
             let randomNumber = Math.floor(Math.random()*antwortenOhne.length);
             return await interaction.reply(antworten[randomNumber])
