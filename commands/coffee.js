@@ -30,7 +30,7 @@ module.exports = {
                 `*${interaction.user} gibt ${coffeeUser} einen Caffè Mocha*`,
                 `*${interaction.user} gibt ${coffeeUser} einen Caffè Americano*`
             ]
-            let randomNumber = Math.floor(Math.random()*antwortenOhne.length);
+            let randomNumber = Math.floor(Math.random()*antworten.length);
             return await interaction.reply(antworten[randomNumber])
         }
         
@@ -48,7 +48,7 @@ module.exports = {
             `*${interaction.user} trinkt einen Caffè Mocha*`,
             `*${interaction.user} trinkt einen Caffè Americano*`
         ]
-        let randomNumber = Math.floor(Math.random()*antwortenOhne.length);
+        let randomNumber = Math.floor(Math.random()*antworten.length);
         await interaction.reply(antworten[randomNumber])
 
 	},
