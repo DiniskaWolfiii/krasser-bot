@@ -14,7 +14,7 @@ module.exports = {
  * @param {import('discord.js').Interaction} interaction
  */
 	async execute(interaction) {
-        const coffeeUser = interaction.options.getUser('user');
+        const coffeeUser = interaction.options.getMember('user');
         if(coffeeUser) {
             let antworten = [
                 `*${interaction.user} gibt ${cofeeUser} einen Latte Macchiato*`,

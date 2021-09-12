@@ -14,7 +14,7 @@ module.exports = {
  * @param {import('discord.js').Interaction} interaction
  */
 	async execute(interaction) {
-		const cookieUser = interaction.options.getUser('user');
+		const cookieUser = interaction.options.getMember('user');
 
         if(cookieUser) {
             return await interaction.reply(`*${interaction.user} gibt ${cookieUser} ein Keks :cookie:*`);

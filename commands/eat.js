@@ -14,7 +14,7 @@ module.exports = {
  * @param {import('discord.js').Interaction} interaction
  */
 	async execute(interaction) {
-		const eatUser = interaction.options.getUser('user');
+		const eatUser = interaction.options.getMember('user');
 
         if(eatUser) {
             if(eatUser.user.id === interaction.user.id) {
