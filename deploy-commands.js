@@ -18,7 +18,7 @@ const rest = new REST({ version: '9' }).setToken(token);
 	try {
 		await rest.put(
 			Routes.applicationGuildCommands(clientId, deployId),
-			//Routes.applicationCommands(clientId), <-- wird genommen wenn commands global sein sollen
+			//Routes.applicationCommands(clientId), //<-- wird genommen wenn commands global sein sollen
 			{ body: commands },
 		);
 

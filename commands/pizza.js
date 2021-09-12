@@ -24,6 +24,6 @@ module.exports = {
             ]
             return await interaction.reply(antworten[Math.floor(Math.random() * antworten.length)])
         }
-        await interaction.reply(`*${interaction.user} frisst Pizza, gibt aber niemandem ein Stück davon ab! :pizza:*`)])
+        await interaction.reply(`*${interaction.user} frisst Pizza, gibt aber niemandem ein Stück davon ab! :pizza:*`)
 	},
 };
