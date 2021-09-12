@@ -2,7 +2,7 @@ const fs = require('fs');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { clientId, deployId, token } = require('./botconfig.json');
+const { clientId, deployId, deployClientId, token } = require('./botconfig.json');
 
 const commands = []
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -17,7 +17,7 @@ const rest = new REST({ version: '9' }).setToken(token);
 (async () => {
 	try {
 		await rest.put(
-			Routes.applicationGuildCommands(clientId, deployId),
+			Routes.applicationGuildCommands(deployClientId, deployId), // <-- wird genommen wenn commands guild only sein sollen
 			//Routes.applicationCommands(clientId), //<-- wird genommen wenn commands global sein sollen
 			{ body: commands },
 		);
