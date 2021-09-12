@@ -18,18 +18,18 @@ module.exports = {
 
         if(slapUser) {
             let antworten = [
-                `*${interactiob.user} klatscht ${slapUser}*`,
-                `*${interactiob.user} klatscht ${slapUser}*`,
-                `*${interactiob.user} klatscht ${slapUser}*`,
-                `*${interactiob.user} klatscht ${slapUser}*`,
-                `*${interactiob.user} klatscht ${slapUser}*`,
-                `*${interactiob.user} klatscht ${slapUser} auf den Ass*`
+                `*${interaction.user} klatscht ${slapUser}*`,
+                `*${interaction.user} klatscht ${slapUser}*`,
+                `*${interaction.user} klatscht ${slapUser}*`,
+                `*${interaction.user} klatscht ${slapUser}*`,
+                `*${interaction.user} klatscht ${slapUser}*`,
+                `*${interaction.user} klatscht ${slapUser} auf den Ass*`
             ]
             return await interaction.reply(antworten[Math.floor(Math.random() * antworten.length)])
         }
         let antworten = [
-            `*${interactiob.user} hat das verlangen jemanden zu klatschen :clap:*`,
-            `*${interactiob.user} hebt die Hand und hat das Verlangen jemanden zu klatschen*`
+            `*${interaction.user} hat das verlangen jemanden zu klatschen :clap:*`,
+            `*${interaction.user} hebt die Hand und hat das Verlangen jemanden zu klatschen*`
           ]
         await interaction.reply(antworten[Math.floor(Math.random() * antworten.length)])
 	},
