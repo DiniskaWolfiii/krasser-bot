@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { Client, Intents, Collection } = require('discord.js');
-const botconfig = require('./botconfig.json');
+const {token, testToken} = require('./botconfig.json');
 
 const client = new Client({
     intents:
@@ -33,4 +33,4 @@ for(const file of eventFiles) {
     }
 }
 
-client.login(botconfig.token)
+client.login(testToken)
