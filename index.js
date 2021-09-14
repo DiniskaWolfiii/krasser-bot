@@ -33,4 +33,4 @@ for(const file of eventFiles) {
     }
 }
 
-client.login(Token)
+client.login(token)
