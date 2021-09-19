@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { Client, Intents, Collection } = require('discord.js');
-const {token, testToken} = require('./botconfig.json');
+const {token} = require('./botconfig.json');
 
 const client = new Client({
     intents:

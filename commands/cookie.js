@@ -7,7 +7,7 @@ module.exports = {
 		.setDescription('Iss oder gib jemand anderen einen Keks!')
         .addUserOption(option => 
             option.setName('user')
-            .setDescription('User dem du ein Keks geben willst!')
+            .setDescription('User dem du ein Keks geben willst')
             .setRequired(false)),
 		
 /**
@@ -17,6 +17,7 @@ module.exports = {
 		const cookieUser = interaction.options.getMember('user');
 
         if(cookieUser) {
+            if(cookieUser.user.id===interaction.user.id) return await interaction.reply({content: 'Du kannst den Command nicht auf dich selber wirken! Für dich selbst, gib keinen User an.', ephemeral: true})
             return await interaction.reply(`*${interaction.user} gibt ${cookieUser} ein Keks :cookie:*`);
         }
         await interaction.reply(`*${interaction.user} isst genüsslich einen Keks :cookie:*`);

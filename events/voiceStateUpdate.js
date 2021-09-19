@@ -7,7 +7,6 @@ module.exports = {
      */
     execute(oldState, newState) {
         let joinToCreate = '882015730487398460';
-        //if (newState.channel.guild.id !== '841784867778985996') return; // Prüfung ob Server
 
         if (newState.channelId === joinToCreate && newState.channel.members.size !== 0) {
 
@@ -18,11 +17,12 @@ module.exports = {
                 permissionOverwrites: [
                     {
                         id: newState.member.user.id,
-                        allow: ['MANAGE_CHANNELS', 'MOVE_MEMBERS', 'MANAGE_ROLES', 'MUTE_MEMBERS', 'DEAFEN_MEMBERS']
+                        allow: ['MANAGE_CHANNELS', 'MOVE_MEMBERS', 'MANAGE_ROLES', 'MUTE_MEMBERS', 'DEAFEN_MEMBERS', 'PRIORITY_SPEAKER']
                     },
                     {
                         id: newState.member.guild.id,
-                        deny: ['CONNECT']
+                        deny: ['CONNECT'],
+                        allow: ['VIEW_CHANNEL', 'SPEAK']
                     },
                 ],
             })
