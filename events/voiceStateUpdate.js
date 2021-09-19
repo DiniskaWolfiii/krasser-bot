@@ -20,6 +20,10 @@ module.exports = {
                         id: newState.member.user.id,
                         allow: ['MANAGE_CHANNELS', 'MOVE_MEMBERS', 'MANAGE_ROLES', 'MUTE_MEMBERS', 'DEAFEN_MEMBERS']
                     },
+                    {
+                        id: newState.member.guild.id,
+                        deny: ['CONNECT']
+                    },
                 ],
             })
                 .then(newChannel => newState.setChannel(newChannel));
