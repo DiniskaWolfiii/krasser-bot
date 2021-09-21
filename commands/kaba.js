@@ -20,10 +20,10 @@ module.exports = {
         if (kabaUser) {
             if (kabaUser.user.id === interaction.user.id) return await interaction.reply({ content: 'Du kannst den Command nicht auf dich selber wirken! Für dich selbst, gib keinen User an.', ephemeral: true })
             antworten = [
-                `*${interaction.user} gibt ${taggedUser} eine Heisse Schokolade*`,
-                `*${interaction.user} gibt ${taggedUser} einen White Hot Chocolate*`,
-                `*${interaction.user} gibt ${taggedUser} einen Hazelnut Chocolate*`,
-                `*${interaction.user} gibt ${taggedUser} einen Caramel Chocolate*`
+                `*${interaction.user} gibt ${kabaUser} eine Heisse Schokolade*`,
+                `*${interaction.user} gibt ${kabaUser} einen White Hot Chocolate*`,
+                `*${interaction.user} gibt ${kabaUser} einen Hazelnut Chocolate*`,
+                `*${interaction.user} gibt ${kabaUser} einen Caramel Chocolate*`
             ]
         } else {
             antworten = [
