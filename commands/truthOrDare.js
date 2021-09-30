@@ -36,9 +36,13 @@ module.exports = {
         else {
             antworten = [
                 'Verteidige einen Furry wenn einer geflamed wird.',
-                'Poste das neueste Bild in deiner Gallerie.',
+                'Poste das neueste Bild in deiner Galerie.',
                 'Joker: Gib jemanden deiner Wahl eine Aufgabe. Führe den Befehl nochmal aus um die Aufgabe für die Person zu erfahren.',
-                'Mach nichts.'
+                'Mach nichts.',
+                'Mach ein Foto von deiner Momentanen Sicht und poste es hier',
+                'Überzeuge den gesamten Chat dazu dass du das andere Geschlecht bist',
+                'Der Chat darf entscheiden was du trinken musst',
+                'Der Chat darf entscheiden was deine Aufgabe ist'
             ]
             await interaction.reply('Dare: ' + antworten[Math.floor(Math.random() * antworten.length)])
         }
