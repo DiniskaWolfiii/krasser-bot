@@ -35,12 +35,12 @@ module.exports = {
         } else {
             antworten = [
                 `*${interaction.user} trinkt Wasser*`,
-                `*${interaction.user} trinkt Wasser`,
-                `*${interaction.user} trinkt Wasser`,
-                `*${interaction.user} trinkt Wasser`,
-                `*${interaction.user} trinkt Wasser`,
-                `*${interaction.user} trinkt Wasser`,
-                `*${interaction.user} trinkt Wasser`,
+                `*${interaction.user} trinkt Wasser*`,
+                `*${interaction.user} trinkt Wasser*`,
+                `*${interaction.user} trinkt Wasser*`,
+                `*${interaction.user} trinkt Wasser*`,
+                `*${interaction.user} trinkt Wasser*`,
+                `*${interaction.user} trinkt Wasser*`,
                 `*${interaction.user} trinkt so viel Wasser dass ${interaction.user} ertrinkt... Stay hydrated!*`,
                 `*Beim Versuch Wasser zu trinken stolpert ${interaction.user} und überkippt was Wasser über die ganzen Klamotten...*`,
                 `*Beim Versuch Wasser zu trinken stolpert ${interaction.user} und ist nun Nass... Hoffentlich ist ${interaction.user} nicht Wasserscheu :grimacing:*`
