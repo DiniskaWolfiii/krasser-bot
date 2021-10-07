@@ -20,7 +20,7 @@ module.exports = {
         if (fuckoffUser) {
             if (fuckoffUser.user.id === interaction.user.id) return await interaction.reply({ content: 'Du kannst den Command nicht auf dich selber wirken! Für dich selbst, gib keinen User an.', ephemeral: true })
             
-            ntworten = [
+            antworten = [
                 `*${interaction.user} ist angepisst von ${fuckoffUser}... Fuck-Off...*`,
                 `*${interaction.user} ist angepisst von ${fuckoffUser}... Fuck-Off...*`,
                 `*${interaction.user} ist angepisst von ${fuckoffUser}... Fuck-Off...*`,
