@@ -5,6 +5,6 @@ module.exports = {
  */
     execute (message) {
         // Halloween Event
-        if(message.channel.id === '841784868270506007') return message.member.roles.add('886699740572565575', 'Teilgenommen am Halloween Event');
+        if(message.channel.id === '897435307996221440') return message.member.roles.add('897434883268431912', 'Teilgenommen am Halloween Event');
     }
 }
