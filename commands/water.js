@@ -27,9 +27,9 @@ module.exports = {
                 `*${interaction.user} gibt ${waterUser} Wasser. Stay hydrated!*`,
                 `*${interaction.user} gibt ${waterUser} Wasser. Stay hydrated!*`,
                 `*${interaction.user} gibt ${waterUser} Wasser. Stay hydrated!*`,
-                `*${interaction.user} gibt ${waterUser} so viel Wasser dass ${waterUser} ertrinkt... Stay hydrated!*`
-                `*Beim Versuch ${waterUser} Wasser zu geben, stolpert ${interaction.user} und übergießt das ganze Wasser auf ${waterUser}...*`,
-                `*Beim Versuch ${waterUser} Wasser zu geben, stolpert ${interaction.user} und übergießt das ganze Wasser auf ${waterUser}... Hoffentlich deckt ${interaction.user}'s sowas ab :grimacing:'`,
+                `*${interaction.user} gibt ${waterUser} so viel Wasser dass ${waterUser} ertrinkt... Stay hydrated!*`,
+                `*Beim Versuch ${waterUser} Wasser zu geben, stolpert ${interaction.user} und übergießt das ganze Wasser auf ${waterUser.user}...*`,
+                `*Beim Versuch ${waterUser} Wasser zu geben, stolpert ${interaction.user} und übergießt das ganze Wasser auf ${waterUser.user}... Hoffentlich deckt ${interaction.user}'s sowas ab :grimacing:'`,
                 `*Auf dem Weg ${waterUser} Wasser zu geben, verspührt ${interaction.user} selber Durst und trinkt das ganze Wasser leer...`
             ]
         } else {
