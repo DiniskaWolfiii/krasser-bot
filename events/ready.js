@@ -11,7 +11,8 @@ module.exports = {
             'Sollte ich doch nochmal pinkeln gehen?',
             'Gibt es intelligentes Leben auf der Erde?',
             'Wie heißt Obama mit Nachnamen?',
-            'Roboter übernehmen die Meschheit! 🤖'
+            'Roboter übernehmen die Meschheit! 🤖',
+			'Wie pusten Drachen Kerzen aus?'
         ]
 
         client.user.setActivity(stati[Math.floor(Math.random() * stati.length)], { type: 'PLAYING' });
