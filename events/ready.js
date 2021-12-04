@@ -13,6 +13,7 @@ module.exports = {
             'Wie heißt Obama mit Nachnamen?',
             'Roboter übernehmen die Meschheit! 🤖'
         ]
-        client.user.setActivity(stati, { type: 'PLAYING' });
+
+        client.user.setActivity(stati[Math.floor(Math.random() * stati.length)], { type: 'PLAYING' });
     }
 }
