@@ -24,6 +24,7 @@ module.exports = {
                         allow: ['VIEW_CHANNEL', 'SPEAK', 'CONNECT']
                     },
                 ],
+                position: 1,
             })
                 .then(newChannel => newState.setChannel(newChannel));
                 return;
