@@ -21,16 +21,13 @@ module.exports = {
                     },
                     {
                         id: newState.member.guild.id,
-                        deny: ['CONNECT'],
-                        allow: ['VIEW_CHANNEL', 'SPEAK']
+                        allow: ['VIEW_CHANNEL', 'SPEAK', 'CONNECT']
                     },
                 ],
             })
                 .then(newChannel => newState.setChannel(newChannel));
-
-        } else if (!newState.channelId) {
-            if(oldState.channelId === '882015730487398460' || oldState.channelId === '882015782031228938') return;
-            if (oldState.channel.parentId === '882015433505513503' && oldState.channel.members.size === 0) return oldState.channel.delete();
         }
+        if (oldState.channelId === '882015730487398460' || oldState.channelId === '882015782031228938') return;
+        if (oldState.channel.parentId === '882015433505513503' && oldState.channel.members.size === 0) return oldState.channel.delete();
     }
 }
