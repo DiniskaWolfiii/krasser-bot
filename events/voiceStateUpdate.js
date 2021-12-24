@@ -29,7 +29,7 @@ module.exports = {
                 .then(newChannel => newState.setChannel(newChannel));
                 return;
         }
-        if (oldState.channelId === '882015730487398460' || oldState.channelId === '882015782031228938') return;
+        if (oldState.channelId === '882015730487398460' || oldState.channelId === '882015782031228938' || oldState.channelId === '693231709407150121' || oldState.channelId === '924048038597644298') return;
         if (oldState.channel.parentId === '882015433505513503' && oldState.channel.members.size === 0) return oldState.channel.delete();
     }
 }
