@@ -12,7 +12,8 @@ module.exports = {
             'Gibt es intelligentes Leben auf der Erde?',
             'Wie heißt Obama mit Nachnamen?',
             'Roboter übernehmen die Meschheit! 🤖',
-			'Wie pusten Drachen Kerzen aus?'
+			'Wie pusten Drachen Kerzen aus?',
+            'A party without a cake is just a meeting.'
         ]
 
         client.user.setActivity(stati[Math.floor(Math.random() * stati.length)], { type: 'PLAYING' });
