@@ -7,7 +7,7 @@ Krasser-Bot is a selfwritten Discord Bot which do some nice stuff. It has some n
 - Has a temporary Voicechannel function
 - Fun Commands
 - ~~Can tell you a bedstory~~
-- Texts are german cause im german
+- Texts are german cause i am german
 
 ### Contact
 [wolfiii@wolfiii.de](mailto:wolfiii@wolfiii.de)
