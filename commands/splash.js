@@ -4,7 +4,7 @@ const water = require('./water');
 module.exports = {
 
     data: new SlashCommandBuilder()
-        .setName('splasg')
+        .setName('splash')
         .setDescription('Spritze andere Leute mit Wasser ab!')
         .addUserOption(option =>
             option.setName('user')
