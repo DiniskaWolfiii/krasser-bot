@@ -12,7 +12,7 @@ for (const file of commandFiles) {
 	commands.push(command.data.toJSON());
 }
 
-const rest = new REST({ version: '9' }).setToken(publicToken); // !!! TOKEN ÄNDERN BEIM PUSHEN !!!
+const rest = new REST({ version: '9' }).setToken(token); // !!! TOKEN ÄNDERN BEIM PUSHEN !!!
 
 (async () => {
 	try {
