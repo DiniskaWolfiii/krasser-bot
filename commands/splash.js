@@ -26,8 +26,8 @@ module.exports = {
                 `*${interaction.user} spritzt ${waterUser} mit Wasser ab :sweat_drops:*`,
                 `*${interaction.user} spritzt ${waterUser} mit Wasser ab :sweat_drops:*`,
                 `*${interaction.user} spritzt ${waterUser} ab :sweat_drops:*`,
-                `*${interaction.user} nimmt ein Glas und wirfts nach ${waterUser}*`,
-                `*${interaction.user} nimmt ein Glas und wirfts nach ${waterUser}*`,
+                `*${interaction.user} nimmt ein Glas Wasser und wirfts nach ${waterUser}*`,
+                `*${interaction.user} nimmt ein Glas Wasser und wirfts nach ${waterUser}*`,
             ]
         } else {
             antworten = [
