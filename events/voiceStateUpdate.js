@@ -45,7 +45,7 @@ module.exports = {
                 newState.guild.channels.create(newState.member.user.username + "'s Voice", {
                     type: 'GUILD_VOICE',
                     parent: '941422858607931442',
-                    position: 1,
+                    position: 300,
                     userLimit: 5,
                     permissionOverwrites: [
                         {
