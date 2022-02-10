@@ -20,7 +20,11 @@ module.exports = {
             .setTitle('Krasser Dude hat den Server verlassen!')
             .setDescription(byeMessages[randomNumber]);
     
-        let krasserChannel = oldMember.guild.channels.cache.find(c => c.id === '692636574831214623');
-        krasserChannel.send({embeds: [byeEmbed]});
+            switch (oldMember.guild.id) {
+                case '565879649175994368':
+                    let krasserChannel = oldMember.guild.channels.cache.find(c => c.id === '692636574831214623');
+                    krasserChannel.send({embeds: [byeEmbed]});
+                    break;
+            }
     }
 }
