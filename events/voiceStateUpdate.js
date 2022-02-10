@@ -45,6 +45,7 @@ module.exports = {
                 newState.guild.channels.create(newState.member.user.username + "'s Voice", {
                     type: 'GUILD_VOICE',
                     parent: '941422858607931442',
+                    position: 1,
                     userLimit: 5,
                     permissionOverwrites: [
                         {
@@ -56,7 +57,6 @@ module.exports = {
                             allow: ['VIEW_CHANNEL', 'SPEAK', 'CONNECT']
                         },
                     ],
-                    position: 2,
                 })
                     .then(newChannel => newState.setChannel(newChannel));
                 return;
