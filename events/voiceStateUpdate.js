@@ -61,7 +61,7 @@ module.exports = {
                     .then(newChannel => newState.setChannel(newChannel));
                 return;
             }
-            if (oldState.channelId === '941422962056265748' || oldState.channelId === '941423012517937193') return;
+            if (oldState.channelId === '941422962056265748') return;
             if (oldState.channel.parentId === '941422858607931442' && oldState.channel.members.size === 0) return oldState.channel.delete();
         }
     }
